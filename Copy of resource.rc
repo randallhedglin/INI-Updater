@@ -1,0 +1,155 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 349, 278
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DragonFireSDK INI Updater"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Device Info",IDC_STATIC,7,7,335,88
+    LTEXT           "Device Name:",IDC_STATIC,16,21,46,8
+    EDITTEXT        IDC_EDIT_DEVNAME,67,19,100,14,ES_AUTOHSCROLL
+    LTEXT           "System Name:",IDC_STATIC,181,21,46,8
+    EDITTEXT        IDC_EDIT_SYSNAME,232,19,100,14,ES_AUTOHSCROLL
+    LTEXT           "Device UDID:",IDC_STATIC,16,41,51,8
+    EDITTEXT        IDC_EDIT_DEVUDID,67,39,100,14,ES_AUTOHSCROLL
+    LTEXT           "System Version:",IDC_STATIC,176,41,51,8
+    EDITTEXT        IDC_EDIT_SYSVERSION,232,39,100,14,ES_AUTOHSCROLL
+    LTEXT           "UI Type:",IDC_STATIC,34,59,28,8
+    CONTROL         "iPhone/iPod",IDC_RADIO_IPHONE,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,67,59,55,10
+    CONTROL         "iPad",IDC_RADIO_IPAD,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,125,59,30,10
+    CONTROL         "Multitasking Enabled",IDC_CHECK_MULTITASK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,232,59,81,10
+    LTEXT           "Language:",IDC_STATIC,27,76,35,8
+    COMBOBOX        IDC_COMBO_LANGUAGE,67,74,100,80,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Country:",IDC_STATIC,199,76,27,8
+    COMBOBOX        IDC_COMBO_COUNTRY,232,74,100,80,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Battery Info",IDC_STATIC,7,99,335,50
+    LTEXT           "State:",IDC_STATIC,16,112,20,8
+    CONTROL         "Unknown",IDC_RADIO_BATT0,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,43,112,47,10
+    CONTROL         "Unplugged",IDC_RADIO_BATT1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,95,112,51,10
+    CONTROL         "Charging",IDC_RADIO_BATT2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,153,112,44,10
+    CONTROL         "Full",IDC_RADIO_BATT3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,203,112,27,10
+    LTEXT           "Level:",IDC_STATIC,16,129,20,8
+    SCROLLBAR       IDC_SCROLLBAR3,44,128,245,11,WS_TABSTOP
+    EDITTEXT        IDC_EDIT_BATTLEVEL,300,127,30,14,ES_CENTER | 
+                    ES_AUTOHSCROLL | WS_DISABLED | NOT WS_TABSTOP
+    GROUPBOX        "Location Info",IDC_STATIC,7,154,335,76
+    LTEXT           "Latitude:",IDC_STATIC,22,169,28,8
+    EDITTEXT        IDC_EDIT_LATITUDE,56,167,100,14,ES_AUTOHSCROLL
+    LTEXT           "Course:",IDC_STATIC,161,169,25,8
+    EDITTEXT        IDC_EDIT_COURSE,192,166,50,14,ES_AUTOHSCROLL
+    LTEXT           "Heading:",IDC_STATIC,247,169,30,8
+    EDITTEXT        IDC_EDIT_HEADING,282,166,50,14,ES_AUTOHSCROLL
+    LTEXT           "Longitude:",IDC_STATIC,16,188,33,8
+    EDITTEXT        IDC_EDIT_LONGITUDE,56,187,100,14,ES_AUTOHSCROLL
+    LTEXT           "Speed:",IDC_STATIC,163,189,23,8
+    EDITTEXT        IDC_EDIT_SPEED,192,187,50,14,ES_AUTOHSCROLL
+    LTEXT           "Altitude:",IDC_STATIC,252,190,27,8
+    EDITTEXT        IDC_EDIT_ALTITUDE,282,187,50,14,ES_AUTOHSCROLL
+    LTEXT           "Horiz. Accuracy:",IDC_STATIC,16,210,53,8
+    EDITTEXT        IDC_EDIT_HORZACC,74,208,48,14,ES_AUTOHSCROLL
+    LTEXT           "Vert. Accuracy:",IDC_STATIC,137,210,49,8
+    EDITTEXT        IDC_EDIT_VERTACC,192,208,50,14,ES_AUTOHSCROLL
+    CONTROL         "Auto-Update Location",IDC_CHECK_AUTOUPDATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,251,211,85,10
+    GROUPBOX        "INI File Info",IDC_STATIC,7,235,335,35
+    LTEXT           "Output Filename:",IDC_STATIC,16,250,54,8
+    EDITTEXT        IDC_EDIT_FILENAME,76,248,175,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED | NOT WS_TABSTOP
+    PUSHBUTTON      "Change File...",IDC_BUTTON_CHANGE,262,248,70,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 342
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 271
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
